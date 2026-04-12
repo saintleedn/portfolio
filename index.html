@@ -267,32 +267,55 @@
   <!-- POSTS FROM X -->
   <section id="posts">
     <div class="sec-label">Featured Posts</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div style="position:relative">
+      <div id="tweet-scroll" style="display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:12px;scrollbar-width:none;-ms-overflow-style:none">
+        <style>#tweet-scroll::-webkit-scrollbar{display:none}</style>
 
-      <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-        <p lang="en" dir="ltr">Loading tweet...</p>
-        &mdash; Saint Lee (@SaintLee04)
-        <a href="https://twitter.com/SaintLee04/status/2036739069888385325">View on X</a>
-      </blockquote>
+        <div style="min-width:320px;max-width:340px;flex-shrink:0">
+          <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+            <p lang="en" dir="ltr">Loading tweet...</p>
+            &mdash; Saint Lee (@SaintLee04)
+            <a href="https://twitter.com/SaintLee04/status/2036739069888385325">View on X</a>
+          </blockquote>
+        </div>
 
-      <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-        <p lang="en" dir="ltr">Loading tweet...</p>
-        &mdash; Saint Lee (@SaintLee04)
-        <a href="https://twitter.com/SaintLee04/status/1997289932612624508">View on X</a>
-      </blockquote>
+        <div style="min-width:320px;max-width:340px;flex-shrink:0">
+          <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+            <p lang="en" dir="ltr">Loading tweet...</p>
+            &mdash; Saint Lee (@SaintLee04)
+            <a href="https://twitter.com/SaintLee04/status/1997289932612624508">View on X</a>
+          </blockquote>
+        </div>
 
-      <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-        <p lang="en" dir="ltr">Loading tweet...</p>
-        &mdash; Saint Lee (@SaintLee04)
-        <a href="https://twitter.com/SaintLee04/status/2000111508240695577">View on X</a>
-      </blockquote>
+        <div style="min-width:320px;max-width:340px;flex-shrink:0">
+          <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+            <p lang="en" dir="ltr">Loading tweet...</p>
+            &mdash; Saint Lee (@SaintLee04)
+            <a href="https://twitter.com/SaintLee04/status/2000111508240695577">View on X</a>
+          </blockquote>
+        </div>
 
-      <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-        <p lang="en" dir="ltr">Loading tweet...</p>
-        &mdash; Saint Lee (@SaintLee04)
-        <a href="https://twitter.com/SaintLee04/status/2005493423718248827">View on X</a>
-      </blockquote>
+        <div style="min-width:320px;max-width:340px;flex-shrink:0">
+          <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+            <p lang="en" dir="ltr">Loading tweet...</p>
+            &mdash; Saint Lee (@SaintLee04)
+            <a href="https://twitter.com/SaintLee04/status/2005493423718248827">View on X</a>
+          </blockquote>
+        </div>
 
+      </div>
+
+      <!-- Scroll buttons -->
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <button onclick="document.getElementById('tweet-scroll').scrollBy({left:-360,behavior:'smooth'})"
+          style="background:#1a1a1a;border:0.5px solid #333;color:#999;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:13px;transition:all .2s"
+          onmouseover="this.style.borderColor='#c8f55a';this.style.color='#c8f55a'"
+          onmouseout="this.style.borderColor='#333';this.style.color='#999'">← Prev</button>
+        <button onclick="document.getElementById('tweet-scroll').scrollBy({left:360,behavior:'smooth'})"
+          style="background:#1a1a1a;border:0.5px solid #333;color:#999;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:13px;transition:all .2s"
+          onmouseover="this.style.borderColor='#c8f55a';this.style.color='#c8f55a'"
+          onmouseout="this.style.borderColor='#333';this.style.color='#999'">Next →</button>
+      </div>
     </div>
   </section>
 
