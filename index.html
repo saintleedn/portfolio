@@ -81,6 +81,19 @@
   .skill-wrap{display:flex;flex-wrap:wrap;gap:8px}
   .skill{font-size:12px;padding:5px 12px;border-radius:20px;border:0.5px solid var(--border);color:var(--text2);background:var(--bg2)}
 
+  /* EVENTS */
+  .event-carousel{position:relative}
+  .event-scroll{display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:12px;scrollbar-width:none;-ms-overflow-style:none}
+  .event-scroll::-webkit-scrollbar{display:none}
+  .event-card{min-width:300px;max-width:320px;flex-shrink:0;background:var(--bg2);border:0.5px solid var(--border2);border-radius:var(--radius);overflow:hidden}
+  .event-photo{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:linear-gradient(135deg,#182114,#111827 55%,#2a2a2a)}
+  .event-body{padding:14px 16px}
+  .event-title{font-size:14px;font-weight:700;line-height:1.4;margin-bottom:5px}
+  .event-meta{font-size:12px;color:var(--text2)}
+  .event-btns{display:flex;gap:8px;margin-top:12px}
+  .event-btn{background:var(--bg3);border:0.5px solid var(--border2);color:var(--text2);padding:6px 14px;border-radius:20px;cursor:pointer;font-size:13px;transition:all .2s;font-family:inherit}
+  .event-btn:hover{border-color:var(--accent);color:var(--accent)}
+
 
 
   /* CONTACT */
@@ -112,6 +125,7 @@
     .hero-name{font-size:22px}
     .hero-tagline{font-size:15px}
     .ach-grid,.contact-wrap{grid-template-columns:1fr}
+    .event-card{min-width:280px}
     .nav-links{display:none}
   }
 
@@ -138,6 +152,7 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#events">Events</a>
       <a href="#posts">Posts</a>
       <a href="#contact">Contact</a>
     </div>
@@ -269,6 +284,90 @@
       <span class="skill">Tokenomics</span><span class="skill">DeFi Strategy</span><span class="skill">DefiLlama</span>
       <span class="skill">Canva Design</span><span class="skill">OBS Software</span><span class="skill">AI Workflow</span>
       <span class="skill">Ambassador Program</span>
+    </div>
+  </section>
+
+  <!-- EVENTS HOSTED -->
+  <section id="events">
+    <div class="sec-label">Events Hosted</div>
+    <div class="event-carousel">
+      <div id="event-scroll" class="event-scroll">
+        <article class="event-card">
+          <img class="event-photo" src="ritual-da-nang-meetup-2025.jpg" alt="Ritual Da Nang Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Da Nang Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 1</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-da-nang-meetup-2025 (2).jpg" alt="Ritual Da Nang Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Da Nang Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 2</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-da-nang-meetup-2025 (3).jpg" alt="Ritual Da Nang Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Da Nang Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 3</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg.png" alt="Ritual Nha Trang Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Nha Trang Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 1</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg (2).png" alt="Ritual Nha Trang Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Nha Trang Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 2</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg (3).png" alt="Ritual Nha Trang Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Nha Trang Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 3</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025.jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Ho Chi Minh Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 1</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025 (2).jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Ho Chi Minh Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 2</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025 (3).jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          <div class="event-body">
+            <div class="event-title">Ritual Ho Chi Minh Meetup 2025</div>
+            <div class="event-meta">Host / Organizer · Photo 3</div>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-photo" src="kanga exchange kols.jpg" alt="Kanga Exchange KOL Gathering in Da Nang 2026">
+          <div class="event-body">
+            <div class="event-title">Kanga Exchange KOL Gathering in Da Nang 2026</div>
+            <div class="event-meta">Host / Organizer</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="event-btns">
+        <button class="event-btn" onclick="document.getElementById('event-scroll').scrollBy({left:-336,behavior:'smooth'})">&larr; Prev</button>
+        <button class="event-btn" onclick="document.getElementById('event-scroll').scrollBy({left:336,behavior:'smooth'})">Next &rarr;</button>
+      </div>
     </div>
   </section>
 
