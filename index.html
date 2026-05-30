@@ -88,8 +88,14 @@
   .event-card{min-width:300px;max-width:320px;flex-shrink:0;background:var(--bg2);border:0.5px solid var(--border2);border-radius:var(--radius);overflow:hidden}
   .event-photo{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:linear-gradient(135deg,#182114,#111827 55%,#2a2a2a);cursor:pointer;transition:opacity .2s,transform .2s}
   .event-photo:hover{opacity:.86;transform:scale(1.01)}
+  .event-photo.is-error{opacity:0}
+  .event-media{position:relative;background:linear-gradient(135deg,#182114,#111827 55%,#2a2a2a)}
+  .event-media::after{content:attr(data-title);display:none;position:absolute;left:16px;right:16px;bottom:16px;color:var(--accent);font-size:13px;font-weight:700;line-height:1.4}
+  .event-media.has-error::after{display:block}
   .event-body{padding:14px 16px}
   .event-title{font-size:14px;font-weight:700;line-height:1.4;margin-bottom:5px}
+  .event-title a{transition:color .2s}
+  .event-title a:hover{color:var(--accent)}
   .event-meta{font-size:12px;color:var(--text2)}
   .event-btns{display:flex;gap:8px;margin-top:12px}
   .event-btn{background:var(--bg3);border:0.5px solid var(--border2);color:var(--text2);padding:6px 14px;border-radius:20px;cursor:pointer;font-size:13px;transition:all .2s;font-family:inherit}
@@ -301,72 +307,92 @@
     <div class="event-carousel">
       <div id="event-scroll" class="event-scroll">
         <article class="event-card">
-          <img class="event-photo" src="ritual-da-nang-meetup-2025.jpg" alt="Ritual Da Nang Meetup 2025">
+          <div class="event-media" data-title="Ritual Da Nang Meetup 2025">
+            <img class="event-photo" src="ritual-da-nang-meetup-2025.jpg" alt="Ritual Da Nang Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Da Nang Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2000111508240695577" target="_blank" rel="noopener noreferrer">Ritual Da Nang Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 1</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-da-nang-meetup-2025 (2).jpg" alt="Ritual Da Nang Meetup 2025">
+          <div class="event-media" data-title="Ritual Da Nang Meetup 2025">
+            <img class="event-photo" src="ritual-da-nang-meetup-2025 (2).jpg" alt="Ritual Da Nang Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Da Nang Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2000111508240695577" target="_blank" rel="noopener noreferrer">Ritual Da Nang Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 2</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-da-nang-meetup-2025 (3).jpg" alt="Ritual Da Nang Meetup 2025">
+          <div class="event-media" data-title="Ritual Da Nang Meetup 2025">
+            <img class="event-photo" src="ritual-da-nang-meetup-2025 (3).jpg" alt="Ritual Da Nang Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Da Nang Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2000111508240695577" target="_blank" rel="noopener noreferrer">Ritual Da Nang Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 3</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg.png" alt="Ritual Nha Trang Meetup 2025">
+          <div class="event-media" data-title="Ritual Nha Trang Meetup 2025">
+            <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg.png" alt="Ritual Nha Trang Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Nha Trang Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2012424891589648826" target="_blank" rel="noopener noreferrer">Ritual Nha Trang Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 1</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg (2).png" alt="Ritual Nha Trang Meetup 2025">
+          <div class="event-media" data-title="Ritual Nha Trang Meetup 2025">
+            <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg (2).png" alt="Ritual Nha Trang Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Nha Trang Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2012424891589648826" target="_blank" rel="noopener noreferrer">Ritual Nha Trang Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 2</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg (3).png" alt="Ritual Nha Trang Meetup 2025">
+          <div class="event-media" data-title="Ritual Nha Trang Meetup 2025">
+            <img class="event-photo" src="ritual-nha-trang-meetup-2025.jpg (3).png" alt="Ritual Nha Trang Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Nha Trang Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2012424891589648826" target="_blank" rel="noopener noreferrer">Ritual Nha Trang Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 3</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025.jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          <div class="event-media" data-title="Ritual Ho Chi Minh Meetup 2025">
+            <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025.jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Ho Chi Minh Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/RitualVietnam/status/1980698366272237882" target="_blank" rel="noopener noreferrer">Ritual Ho Chi Minh Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 1</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025 (2).jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          <div class="event-media" data-title="Ritual Ho Chi Minh Meetup 2025">
+            <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025 (2).jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Ho Chi Minh Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/RitualVietnam/status/1980698366272237882" target="_blank" rel="noopener noreferrer">Ritual Ho Chi Minh Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 2</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025 (3).jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          <div class="event-media" data-title="Ritual Ho Chi Minh Meetup 2025">
+            <img class="event-photo" src="ritual-ho-chi-minh-meetup-2025 (3).jpg" alt="Ritual Ho Chi Minh Meetup 2025">
+          </div>
           <div class="event-body">
-            <div class="event-title">Ritual Ho Chi Minh Meetup 2025</div>
+            <div class="event-title"><a href="https://x.com/RitualVietnam/status/1980698366272237882" target="_blank" rel="noopener noreferrer">Ritual Ho Chi Minh Meetup 2025</a></div>
             <div class="event-meta">Host / Organizer · Photo 3</div>
           </div>
         </article>
         <article class="event-card">
-          <img class="event-photo" src="kanga exchange kols.jpg" alt="Kanga Exchange KOL Gathering in Da Nang 2026">
+          <div class="event-media" data-title="Kanga Exchange KOL Gathering in Da Nang 2026">
+            <img class="event-photo" src="kanga exchange kols.jpg" alt="Kanga Exchange KOL Gathering in Da Nang 2026">
+          </div>
           <div class="event-body">
-            <div class="event-title">Kanga Exchange KOL Gathering in Da Nang 2026</div>
+            <div class="event-title"><a href="https://x.com/SaintLee04/status/2058074798866260274?s=20" target="_blank" rel="noopener noreferrer">Kanga Exchange KOL Gathering in Da Nang 2026</a></div>
             <div class="event-meta">Host / Organizer</div>
           </div>
         </article>
@@ -491,8 +517,21 @@
   const lightboxClose = imageLightbox.querySelector('.lightbox-close');
 
   document.querySelectorAll('.event-photo').forEach((photo) => {
+    photo.dataset.fullSrc = photo.getAttribute('src');
+    photo.addEventListener('error', () => {
+      if(!photo.dataset.retry){
+        photo.dataset.retry = '1';
+        photo.src = `${photo.dataset.fullSrc}?v=${Date.now()}`;
+        return;
+      }
+
+      photo.classList.add('is-error');
+      photo.closest('.event-media')?.classList.add('has-error');
+      photo.removeAttribute('src');
+    });
+
     photo.addEventListener('click', () => {
-      lightboxImage.src = photo.src;
+      lightboxImage.src = photo.dataset.fullSrc || photo.src;
       lightboxImage.alt = photo.alt;
       imageLightbox.classList.add('open');
       imageLightbox.setAttribute('aria-hidden', 'false');
